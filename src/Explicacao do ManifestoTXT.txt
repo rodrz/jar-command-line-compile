@@ -1,0 +1,80 @@
+Crie um arquivo txt que pode ser renomeado como arquivoManifest.txt
+colocando estas informações
+
+SABENDO QUE APENAS MAIN-CLASS: É A UNICA QUE NAO DEVE FALTAR AS OUTRAS DEPENDE
+ATENCAO CUIDADO EM NAO COLOCAR DOI NAME: DOIS VERSION ELE INDICARA ERRO
+E TB NAO DÊ LINHAS EM BRANCO ENTRE AS DECLARACOES
+
+	Main-Class: pacote.classe 	*1
+	Name:  ver2.class		*2
+	Java-Bean: True 
+
+
+/*	*1 = Substitua pela Nome da Classe Que tem o MAIN SEM Ponto JAVA
+ATENCAO NAO COLOQUE PONTO JAVA,NÃO FUNCIONA
+exemplo Main-Class: TelaPrincipal
+
+ 	*2 = Substitua pela Nome da Classe Que tem o MAIN COM Ponto CLASS
+exemplo Name: TelaPrincipal.class
+*/
+
+
+
+//CERTIFIQUE DE ESTAR DENTRO DA PASTA
+//utilizando os redirecionamentos cd pasta, cd .. etc.
+
+//ESTA LINHA VC COLOCA NO PROMPT DE COMANDO PARA GERAR O JAR
+	jar cfm ARQUIVOJAR.jar arquivoManifest.txt *.*
+//ESTA LINHA VC EXECUTA O JAR NO PROMPT
+	java -jar ARQUIVOJAR.jar
+
+onde *.* sao os arquivos que serao comprimidos
+podendo apenas fazer .class .java .txt ou apenas um deles
+para ler SUBPASTAS faça deste modo
+subpasta/*.* subpasta2/*.* no final do jar cfm
+
+
+
+
+EXEMPLO PRONTO FINAL, que deve ser salvo como arquivoManifest.txt
+************************************
+Main-Class: TelaPrincipal
+Name: TelaPrincipal.class
+Java-Bean: True
+************************************
+Prompt de comando irá digitar
+jar cfm ARQUIVOJAR.jar arquivoManifest.txt *.*		//criou o jar
+java -jar ARQUIVOJAR.jar				//executou o jar
+
+
+
+*************************************
+    Manifest-Version: 1.0
+    Specification-Title: Java Platform API Specification
+    Specification-Version: 1.4
+    Implementation-Title: Java Runtime Environment
+    Implementation-Version: 1.4.0-rc
+    Created-By: 1.4.0-rc (Sun Microsystems Inc.)
+    Implementation-Vendor: Sun Microsystems, Inc.
+    Specification-Vendor: Sun Microsystems, Inc.
+    Name: myCompany/firstPackage/
+    Sealed: true
+    Name: myCompany/secondPackage/
+    Sealed: true  
+    Signature-Version: 1.0
+    SHA1-Digest-Manifest: h1yS+K9T7DyHtZrtI+LxvgqaMYM=
+    Created-By: 1.6.0 (Sun Microsystems Inc.)
+
+
+
+Name The name of the specification. 
+Specification-Title 	O Titulo da especificação. 
+Specification-Version 	a versao da especificação. 
+Specification-Vendor 	O fornecedor da especificação. 
+Implementation-Title 	O Titulo da aplicação.
+Implementation-Version 	O número de compilação da aplicação.
+Implementation-Vendor 	O fornecedor da implementacao
+
+
+<http://www.rgagnon.com/javadetails/java-0532.html>
+

@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Created-By: 1.6.20 (Sun Microsystems Inc.)
+Specification-Title: Java Platform API Specification
+Specification-Version: 1.5
+Implementation-Title: Java Runtime Environment
+Implementation-Version: 1.5.0
+Sealed: true
+Signature-Version: 1.0
+SHA1-Digest-Manifest: h1yS+K9T7DyHtZrtI+LxvgqaMYM=
+Java-Bean: True
+Main-Class: ExemploJanelaSwing
+Name:  ExemploJanelaSwing.class
