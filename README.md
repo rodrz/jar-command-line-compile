@@ -1,10 +1,11 @@
 # Create Jar with Prompt Console
-Criar uma aplicaÁ„o sem o uso de uma IDE.
-Criar execut·veis em windows console, permite manipular as dependÍncias de forma controlada,
-tornando o execut·ve com melhor portabilidade, impedindo que o IDE, 
-coloque libraries atreladas ao server e ao IDE, se assemelhando melhor a um ?.exe
-	1 - CompilaÁ„o do Projeto
-	2 - ExplicaÁ„o do arquivo manifesto cfvm
-	3 - AdiÁ„o de arquivos e pastas recursivamente
-	4 - CompilaÁ„o de um arquivo execut·vel
-	5 - ExecuÁ„o da aplicaÁ„o ?.jar
+<br />Criar uma aplica√ß√£o sem o uso de uma IDE.
+<br />
+<br />Criar execut√°veis em windows console, permite manipular as depend√™ncias de forma controlada,
+<br />tornando o execut√°ve com melhor portabilidade, impedindo que o IDE, 
+<br />coloque libraries atreladas ao server e ao IDE, se assemelhando melhor a um ?.exe
+<br />  1 - Compila√ß√£o do Projeto
+<br />  2 - Explica√ß√£o do arquivo manifesto cfvm
+<br />  3 - Adi√ß√£o de arquivos e pastas recursivamente
+<br />  4 - Compila√ß√£o de um arquivo execut√°vel
+<br />  5 - Execu√ß√£o da aplica√ß√£o ?.jar
